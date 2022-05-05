@@ -1,0 +1,76 @@
+#body{
+    background-color: white;
+    }
+    #bigrestaurant{
+        width: 900px;
+        margin: auto;
+    }
+    header{
+        background-color:chocolate;
+        display: flex;
+        justify-content: space-between; 
+        height: 110px;
+        box-shadow: 2px 2px 2px  2px black;
+       
+       
+    
+    }
+    .logo{
+        width:60px;
+        height: 59px;
+        margin-left: 400px;
+        margin-top: 5px;
+    }
+    
+    nav ul{
+        display:flex;
+         list-style-type: none; 
+         margin-right: 200px; 
+         align-items: center;
+         padding-top:  30px;;
+    }
+    nav li{
+        
+        margin-right: 15px;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+    }
+    .logo ,img{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .square1{
+        border: 1px solid black;
+        box-shadow: 1px 1px 1x 1px black; 
+        width: 488px;
+        height: 386px;
+    }
+    .square2{
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px black;
+        width: 259px;
+        height: 194px;
+    }
+    .square3{
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px black;
+        width: 259;
+        height: 194;
+    
+    }
+    .nourriture{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+  
+       
+    
+    
+    
+    
+    
