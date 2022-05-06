@@ -1,3 +1,4 @@
+/*header pour l'en tête*/
 #body{
     background-color: white;
     }
@@ -6,7 +7,7 @@
         margin: auto;
     }
     header{
-        background-color:chocolate;
+        background-color: orange;
         display: flex;
         justify-content: space-between; 
         height: 110px;
@@ -40,33 +41,160 @@
     .logo ,img{
         text-align: center;
     }
+    /*menu pour mon menu*/
     h1{
         text-align: center;
     }
     .square1{
         border: 1px solid black;
-        box-shadow: 1px 1px 1x 1px black; 
-        width: 488px;
-        height: 386px;
+       box-shadow:1px 1px 1px 1px black ;
+        width: 259px;
+        height: 300px;
+        background-color: white;
+    }
+    .square1 img{
+        height: 194px;
+        width: 259px;
     }
     .square2{
         border: 1px solid black;
         box-shadow: 1px 1px 1px 1px black;
         width: 259px;
-        height: 194px;
+        height: 300px;
+        background-color: white;
     }
     .square3{
         border: 1px solid black;
         box-shadow: 1px 1px 1px 1px black;
-        width: 259;
-        height: 194;
+        width: 259px;
+        height: 300px;
+        background-color: white;
     
+    }
+    .square3 img{
+        border: 2px solid black;
+        height: 194px;
+        width: 259px;
     }
     .nourriture{
         display: flex;
         justify-content: space-evenly;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 50px;
     }
-    
+    .square2 img{
+        width: 259px;
+        height: 194px;
+    }
+    /*mes services pour mes services*/
+    .image img{
+        width: 827.44px;
+        height: 530.02px;
+    }
+    .services{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text{
+        margin-left: 100px;
+    }
+    .text h1{
+        text-align: center;
+        margin-bottom: 150px;
+    }
+    /*pour mes villes partie localisation*/
+    .villes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+        margin-right:100px;
+        margin-bottom: 50px;
+    }
+    .lomé{
+        border: 1px solid black;
+        background-color: orange;
+        width: 50px;
+        padding-left: 10px;
+
+    }
+    .aného{
+        border: 1px solid black;
+        background-color: orange;
+        width: 50px;
+        padding-left: 10px;
+    }
+    .kpalimé{
+        border: 1px solid black;
+        background-color: orange;
+        width: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+     }
+     .atakpamé{
+        border: 1px solid black;
+        background-color: orange;
+        width: 50px;
+        padding-left: 10px;
+        padding-right: 25px;
+     }
+     /*adresse et google maps*/
+     .maps{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-left: 100px;
+         margin-right: 100px;
+     }
+     h3 p{
+         margin-bottom: 100px;
+         text-align: justify;
+     }
+     /*partie temoignages*/
+     .temoignages{
+         display: flex;
+        justify-content: space-around;
+         margin-left:100px ;
+         margin-right:100px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         border: 1px solid black;
+         padding: 100px;
+         background-color: orange;
+         position: relative;
+     }
+     .rectangle1{
+         border: 1px solid black;
+         width: 60%;
+         height: 60%;
+         background-color: white;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-right: 20px;
+     }
+     .rectangle2{
+        border: 1px solid black;
+        width: 60%;
+        height: 60%;  
+        background-color: white; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .temoignages h1{
+        position: absolute;
+       top: 0%;
+    }
+    /*partie contact*/
+    .contact{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nous contacter{
+        display: flex;
+    }
+
+
   
        
     
