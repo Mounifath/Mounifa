@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between; 
         height: 110px;
-        box-shadow: 2px 2px 2px  2px black;
+        box-shadow: 1px 1px 1px  1px white;
        
        
     
@@ -20,7 +20,8 @@
         width:60px;
         height: 59px;
         margin-left: 400px;
-        margin-top: 5px;
+        margin-top:25px;
+       
     }
     
     nav ul{
@@ -41,6 +42,11 @@
     .logo ,img{
         text-align: center;
     }
+    .imagerestaurant{
+       display: grid;
+       grid-template-columns: auto auto;
+    }
+    
     /*menu pour mon menu*/
     h1{
         text-align: center;
@@ -145,8 +151,11 @@
          justify-content: space-between;
          align-items: center;
          margin-left: 100px;
-         margin-right: 100px;
-     }
+         margin-right: 100px;    
+         }
+         .maps1{
+           width:900px; 
+         }
      h3 p{
          margin-bottom: 100px;
          text-align: justify;
@@ -191,6 +200,7 @@
         justify-content: space-between;
         margin-left: 100px;
         margin-right: 100px;
+        margin-bottom: 40px;
     }
     .envoyer{
         border-radius:5px;
@@ -201,7 +211,7 @@
         text-align: center;
         padding-right:5px ;
         margin-top: 25px;
-        margin-left: 100px;
+        margin-left: 250px;
         background-color: orange;
         padding: top 5px; 
         padding-bottom: 5px;
@@ -209,19 +219,85 @@
     .formulaire input{
         border: 0px  ;
         border-bottom: 1px solid black;
+       
     }
     .formulaire{
         margin-right: 100px;
     }
     .nomprenom{
-        margin-bottom: 10px;
+        margin-bottom: 50px;
+       
+       
     }
     .mailcodepostal{
-        margin-bottom: 10px;  
+        margin-bottom: 50px;  
+       
     }
     .message{
-        margin-bottom: 10px; 
+        margin-bottom: 50px; 
+       
     }
+    /*en bas de la page*/
+    .footer{
+        border: 1px solid black;
+        background-color: orange;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+       
+    }
+    .partenaires{
+        display: flex;
+        justify-content: space-between;
+        margin-right:100px;
+        align-items: center;
+    }
+    .part1{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+       padding-right: 30px;
+    }
+    .part2{
+        width: 50px;
+        height: 50px;  
+        margin-top: 15px;
+       
+    }
+    .part3{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+       padding-left: 30px;
+       
+    }
+    .nomprenom input{
+        margin-left:80px;
+        margin-right: 45px;
+    }
+    .mailcodepostal input{
+        margin-left:80px;
+        margin-right: 45px;  
+    }
+    .message input{
+        margin-left:  80px;
+    }
+    .formulaire h2{
+        text-align: center;
+    }
+    .footer nav{
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    i{
+        padding-right: 30px;
+    }
+   
+    
     
   
 
