@@ -189,13 +189,41 @@
     .contact{
         display: flex;
         justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
     }
-    .nous contacter{
-        display: flex;
+    .envoyer{
+        border-radius:5px;
+        border: 1px solid black;
+        width: 70px;
+        height: 5Opx;
+        padding-left: 5px;
+        text-align: center;
+        padding-right:5px ;
+        margin-top: 25px;
+        margin-left: 100px;
+        background-color: orange;
+        padding: top 5px; 
+        padding-bottom: 5px;
+    }
+    .formulaire input{
+        border: 0px  ;
+        border-bottom: 1px solid black;
+    }
+    .formulaire{
+        margin-right: 100px;
     }
     .nomprenom{
-        display: flex;
+        margin-bottom: 10px;
     }
+    .mailcodepostal{
+        margin-bottom: 10px;  
+    }
+    .message{
+        margin-bottom: 10px; 
+    }
+    
+  
 
 
   
