@@ -1,311 +1,466 @@
-/*header pour l'en tête*/
-#body{
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Roboto:ital,wght@1,300&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Bona+Nova:ital@1&family=Diplomata&family=Oxygen&family=Raleway:wght@300;400;600&family=Roboto:ital,wght@1,300&family=Water+Brush&display=swap');
+
+body {
+
     background-color: white;
-    }
-    #bigrestaurant{
-        width: 900px;
-        margin: auto;
-    }
-    header{
-        background-color: orange;
-        display: flex;
-        justify-content: space-between; 
-        height: 110px;
-        box-shadow: 1px 1px 1px  1px white;
-       
-       
-    
-    }
-    .logo{
-        width:60px;
-        height: 59px;
-        margin-left: 400px;
-        margin-top:25px;
-       
-    }
-    
-    nav ul{
-        display:flex;
-         list-style-type: none; 
-         margin-right: 200px; 
-         align-items: center;
-         padding-top:  30px;;
-    }
-    nav li{
-        
-        margin-right: 15px;
-        justify-content: space-between;
-    }
-    a{
-        text-decoration: none;
-    }
-    .logo ,img{
-        text-align: center;
-    }
-    .imagerestaurant{
-       display: grid;
-       grid-template-columns: auto auto;
-    }
-    
-    /*menu pour mon menu*/
-    h1{
-        text-align: center;
-    }
-    .square1{
-        border: 1px solid black;
-       box-shadow:1px 1px 1px 1px black ;
-        width: 259px;
-        height: 300px;
-        background-color: white;
-    }
-    .square1 img{
-        height: 194px;
-        width: 259px;
-    }
-    .square2{
-        border: 1px solid black;
-        box-shadow: 1px 1px 1px 1px black;
-        width: 259px;
-        height: 300px;
-        background-color: white;
-    }
-    .square3{
-        border: 1px solid black;
-        box-shadow: 1px 1px 1px 1px black;
-        width: 259px;
-        height: 300px;
-        background-color: white;
-    
-    }
-    .square3 img{
-        border: 2px solid black;
-        height: 194px;
-        width: 259px;
-    }
-    .nourriture{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 50%;
-        margin-bottom: 50px;
-    }
-    .square2 img{
-        width: 259px;
-        height: 194px;
-    }
-    /*mes services pour mes services*/
-    .image img{
-        width: 827.44px;
-        height: 530.02px;
-    }
-    .services{
-        display: flex;
-        justify-content: space-between;
-    }
-    .text{
-        margin-left: 100px;
-    }
-    .text h1{
-        text-align: center;
-        margin-bottom: 150px;
-    }
-    /*pour mes villes partie localisation*/
-    .villes{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 100px;
-        margin-right:100px;
-        margin-bottom: 50px;
-    }
-    .lomé{
-        border: 1px solid black;
-        background-color: orange;
-        width: 50px;
-        padding-left: 10px;
+}
 
-    }
-    .aného{
-        border: 1px solid black;
-        background-color: orange;
-        width: 50px;
-        padding-left: 10px;
-    }
-    .kpalimé{
-        border: 1px solid black;
-        background-color: orange;
-        width: 50px;
-        padding-left: 25px;
-        padding-right: 25px;
-     }
-     .atakpamé{
-        border: 1px solid black;
-        background-color: orange;
-        width: 50px;
-        padding-left: 10px;
-        padding-right: 25px;
-     }
-     /*adresse et google maps*/
-     .maps{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-left: 100px;
-         margin-right: 100px;    
-         }
-         .maps1{
-           width:900px; 
-         }
-     h3 p{
-         margin-bottom: 100px;
-         text-align: justify;
-     }
-     /*partie temoignages*/
-     .temoignages{
-         display: flex;
-        justify-content: space-around;
-         margin-left:100px ;
-         margin-right:100px;
-         margin-top: 50px;
-         margin-bottom: 50px;
-         border: 1px solid black;
-         padding: 100px;
-         background-color: orange;
-         position: relative;
-     }
-     .rectangle1{
-         border: 1px solid black;
-         width: 60%;
-         height: 60%;
-         background-color: white;
-         padding-left: 20px;
-         padding-right: 20px;
-         margin-right: 20px;
-     }
-     .rectangle2{
-        border: 1px solid black;
-        width: 60%;
-        height: 60%;  
-        background-color: white; 
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .temoignages h1{
-        position: absolute;
-       top: 0%;
-    }
-    /*partie contact*/
-    .contact{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 40px;
-    }
-    .envoyer{
-        border-radius:5px;
-        border: 1px solid black;
-        width: 70px;
-        height: 5Opx;
-        padding-left: 5px;
-        text-align: center;
-        padding-right:5px ;
-        margin-top: 25px;
-        margin-left: 250px;
-        background-color: orange;
-        padding: top 5px; 
-        padding-bottom: 5px;
-    }
-    .formulaire input{
-        border: 0px  ;
-        border-bottom: 1px solid black;
-       
-    }
-    .formulaire{
-        margin-right: 100px;
-    }
-    .nomprenom{
-        margin-bottom: 50px;
-       
-       
-    }
-    .mailcodepostal{
-        margin-bottom: 50px;  
-       
-    }
-    .message{
-        margin-bottom: 50px; 
-       
-    }
-    /*en bas de la page*/
-    .footer{
-        border: 1px solid black;
-        background-color: orange;
-      display: flex;
-      justify-content: space-between;
-     
-    }
-    .icons{
-        display: flex;
-        align-items: center;
-       
-    }
-    .partenaires{
-        display: flex;
-        justify-content: space-between;
-        margin-right:100px;
-        align-items: center;
-    }
-    .part1{
-        width: 50px;
-        height: 50px;
-        margin-top: 15px;
-       padding-right: 30px;
-    }
-    .part2{
-        width: 50px;
-        height: 50px;  
-        margin-top: 15px;
-       
-    }
-    .part3{
-        width: 50px;
-        height: 50px;
-        margin-top: 15px;
-       padding-left: 30px;
-       
-    }
-    .nomprenom input{
-        margin-left:80px;
-        margin-right: 45px;
-    }
-    .mailcodepostal input{
-        margin-left:80px;
-        margin-right: 45px;  
-    }
-    .message input{
-        margin-left:  80px;
-    }
-    .formulaire h2{
-        text-align: center;
-    }
-    .footer nav{
-        margin-bottom: 20px;
-        margin-left: 40px;
-    }
-    i{
-        padding-right: 30px;
-    }
+#bigrestaurant {
+    width: 900px;
+    margin: auto;
+}
+
+header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+
+
+
+}
+
+.logo {
+    width: 100px;
+    height: 95px;
+    margin-left: 150px;
+    margin-top: 30px;
+
+
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 10px;
+    align-items: center;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+nav li {
+
+    margin-right: 15px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo,
+img {
+    text-align: center;
+    margin-bottom: 80;
+}
+
+.imagerestaurant {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.image2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    margin-right: 300px;
+}
+
+.image1 {
+    text-align: center;
+    margin-left: 300px;
+}
+
+.text2 h1 {
+
+    font-family: 'Bona Nova', serif;
+    color: black;
+    margin-left: 100px;
+}
+
+.text1 h1 {
+    font-family: 'Bona Nova', serif;
+    color: black;
+    margin-right: 200px;
+}
+
+.text1 p {
+    text-align: center;
+}
+
+.text1 h3 {
+    color: hwb(60 3% 27%);
+    text-align: center;
+    margin-right: 280px;
+}
+
+.text2 h3 {
+    color: hwb(60 3% 27%);
+    margin-left: 150px;
+}
+
+.text1 {
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.text2 {
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 80px;
+
+}
+
+.boutton_blanc1 {
+    border: 0px solid aliceblue;
+    color: black;
+    background-color: whitesmoke;
+    margin-right: 300px;
    
-    
-    
-  
+    width: 80px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+margin-top: 50px;
+}
 
-
+.boutton_blanc2 {
+    border: 0px solid aliceblue;
+    color: black;
+    background-color:whitesmoke;
+    margin-left: 300px;
+    width: 80px;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   
-       
-    
-    
-    
-    
-    
+}
+.text2 a{
+    font-size:0.7em;
+}
+.text1 a{
+    font-size:0.7em; 
+}
+
+span {
+    margin-right: 65px;
+}
+
+/*menu pour mon menu*/
+h1 {
+    text-align: center;
+}
+
+.square1 {
+    border: 0px solid white;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    width: 259px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.square1 img {
+    height: 194px;
+    width: 259px;
+    border-radius: 10px;
+}
+
+.square2 {
+    border: 0px solid white;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    width: 259px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.square3 {
+    border: 0px solid white;
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    width: 259px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.square3 img {
+    border: 0px solid black;
+    height: 194px;
+    width: 259px;
+}
+
+.nourriture {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 50px;
+}
+
+.square2 img {
+    width: 259px;
+    height: 194px;
+}
+
+/*mes services pour mes services*/
+.image img {
+    width: 827.44px;
+    height: 530.02px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    margin-left: 100px;
+}
+
+.text h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+/*pour mes villes partie localisation*/
+.villes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.lomé {
+    border: 0px solid black;
+    background-color: orange;
+    width: 50px;
+    padding-left: 10px;
+
+}
+
+.aného {
+    border: 0px solid black;
+    background-color: orange;
+    width: 50px;
+    padding-left: 10px;
+}
+
+.kpalimé {
+    border: 0px solid black;
+    background-color: orange;
+    width: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.atakpamé {
+    border: 0px solid black;
+    background-color: orange;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+/*adresse et google maps*/
+.maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.maps1 {
+    width: 900px;
+}
+
+.adresse {
+    margin-bottom: 250px;
+}
+
+h3 p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*partie temoignages*/
+.temoignages {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    padding: 100px;
+    background-color: orange;
+    position: relative;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    font-family: ' cursive';
+}
+
+.rectangle1 {
+    border: 0px solid black;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.rectangle2 {
+    border: 0px solid black;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.temoignages h1 {
+    position: absolute;
+    top: 0%;
+}
+
+/*partie contact*/
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.envoyer {
+    border-radius: 8px;
+    border: 0px solid black;
+    width: 70px;
+    height: 5Opx;
+    padding-left: 5px;
+    text-align: center;
+    padding-right: 5px;
+    margin-top: 25px;
+    margin-left: 250px;
+    background-color: orange;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.formulaire input {
+    border: 0px;
+    border-bottom: 1px solid black;
+
+}
+
+.formulaire {
+    margin-right: 100px;
+}
+
+.nomprenom {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mailcodepostal {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message {
+    margin-bottom: 50px;
+
+}
+
+/*en bas de la page*/
+.footer {
+    border: 0px solid black;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.partenaires {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+
+.part1 {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding-right: 30px;
+}
+
+.part2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+
+}
+
+.part3 {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 30px;
+
+}
+
+.nomprenom input {
+    margin-left: 80px;
+    margin-right: 45px;
+}
+
+.mailcodepostal input {
+    margin-left: 80px;
+    margin-right: 45px;
+}
+
+.message input {
+    margin-left: 80px;
+}
+
+.formulaire h2 {
+    text-align: center;
+}
+
+.footer nav {
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+i {
+    padding-right: 30px;
+}
