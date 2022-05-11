@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Roboto:ital,wght@1,300&family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta&family=Bona+Nova:ital@1&family=Diplomata&family=Oxygen&family=Raleway:wght@300;400;600&family=Roboto:ital,wght@1,300&family=Water+Brush&display=swap');
 
+@font-face {
+    font-family: Roboto-bold;
+    src: url(polices/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(polices/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(polices/Roboto/Roboto-Italic.ttf);
+}
 body {
 
     background-color: white;
 }
 
-#bigrestaurant {
-    width: 900px;
-    margin: auto;
-}
+#bigrestaurant {}
 
 header {
     background-color: orange;
@@ -40,8 +50,9 @@ nav ul {
     align-items: center;
     padding-top: 30px;
     margin-top: 30px;
+    font-family: roboto-medium;
 }
-
+.
 nav li {
 
     margin-right: 15px;
@@ -50,6 +61,7 @@ nav li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .logo,
@@ -92,17 +104,24 @@ img {
 
 .text1 p {
     text-align: center;
+    font-family:roboto-medium ;
 }
 
 .text1 h3 {
-    color: hwb(60 3% 27%);
+    color: hwb(60 5% 35%);
     text-align: center;
     margin-right: 280px;
+    font-family: roboto-medium;
 }
 
 .text2 h3 {
     color: hwb(60 3% 27%);
     margin-left: 150px;
+    font-family:roboto-medium;
+}
+.text2 p{
+    text-align: center;
+    font-family:roboto-medium ; 
 }
 
 .text1 {
@@ -122,20 +141,20 @@ img {
     color: black;
     background-color: whitesmoke;
     margin-right: 300px;
-   
+
     width: 80px;
     height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 .boutton_blanc2 {
     border: 0px solid aliceblue;
     color: black;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     margin-left: 300px;
     width: 80px;
     height: 100px;
@@ -143,13 +162,15 @@ margin-top: 50px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-  
+
 }
-.text2 a{
-    font-size:0.7em;
+
+.text2 a {
+    font-size: 0.7em;
 }
-.text1 a{
-    font-size:0.7em; 
+
+.text1 a {
+    font-size: 0.7em;
 }
 
 span {
@@ -214,6 +235,13 @@ h1 {
     height: 194px;
 }
 
+marquee {
+    width: 100%;
+    padding: 10px 0;
+    animation-delay: 1s;
+
+}
+
 /*mes services pour mes services*/
 .image img {
     width: 827.44px;
@@ -227,6 +255,7 @@ h1 {
 
 .text {
     margin-left: 100px;
+
 }
 
 .text h1 {
@@ -236,6 +265,7 @@ h1 {
 
 .text p {
     margin-bottom: 20px;
+    font-family: Roboto-Medium;
 }
 
 /*pour mes villes partie localisation*/
@@ -294,6 +324,8 @@ h1 {
 
 .adresse {
     margin-bottom: 250px;
+    font-family: Roboto-Medium;
+    font-size: 1.3em;
 }
 
 h3 p {
@@ -325,6 +357,7 @@ h3 p {
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
+    font-family: Roboto-Medium;
 }
 
 .rectangle2 {
@@ -334,11 +367,13 @@ h3 p {
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: Roboto-Medium;
 }
 
 .temoignages h1 {
     position: absolute;
     top: 0%;
+    font-family: roboto-medium;
 }
 
 /*partie contact*/
@@ -363,9 +398,11 @@ h3 p {
     background-color: orange;
     padding-top: 5px;
     padding-bottom: 5px;
-
+    font-family: roboto-bold;
 }
-
+.envoyer a{
+    color: white;
+}
 .formulaire input {
     border: 0px;
     border-bottom: 1px solid black;
@@ -463,4 +500,55 @@ h3 p {
 
 i {
     padding-right: 30px;
+    color: black;
+}
+@media screen and (max-width:767px) {
+    .services{
+        border: 1px solid black;
+        height: 350px;
+    }
+    #nos-services{
+        margin-top: -7px;
+    }
+   #lorem{
+       font-size: 0.8em;
+       margin-top: -60px;
+       
+   }
+    .image{
+        margin-right: 100px;
+        width:50%;
+    }
+    .image img{
+        width: 100%;
+        height: 300px;
+    }
+    .text{
+        margin-left: -50px;
+        width:50% ;
+    }
+    .localisation{
+        border: 1px solid black;
+    }
+    .maps{
+      border: 1px solid black;
+      height: 450px;
+    }
+    .maps1{
+        margin-top: -100px;
+        width: 50%;
+        height: 350px;
+    }
+    .adresse{
+        font-size: 0.9em;
+        margin-left: 50px;
+        margin-top: 100px;
+        width: 50%;
+    }
+    .maps1 iframe{
+        width: 275px;
+    }
+    .temoignages{
+        border: 1px solid black;
+    }
 }
