@@ -451,16 +451,18 @@ h3 p {
 .navfooter {
     display: flex;
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 15px;
     align-items: center;
     padding-top: 30px;
     margin-top: 30px;
-    font-family: roboto-medium
+    font-family: roboto-medium;
+    margin-left:35px;
 }
 
 .navfooter ul {
     display: flex;
     list-style-type: none;
+    margin-right: 25px;
 }
 
 #navfooter_li {
@@ -473,6 +475,7 @@ h3 p {
     margin-right: 15px;
     justify-content: space-between;
     margin-bottom: 50px;
+    margin-right: 30px;
 }
 
 .icons {
@@ -484,9 +487,9 @@ h3 p {
 .partenaires {
     display: flex;
     justify-content: space-between;
-    margin-right: 100%;
+    margin-right: 25%;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 30px;
 }
 
@@ -508,7 +511,6 @@ h3 p {
     height: 50px;
     margin-top: 15px;
     padding-left: 30px;
-
 }
 
 .nomprenom input {
@@ -540,8 +542,6 @@ i {
 
         height: 350px;
     }
-
-    .imagerestaurant {}
 
     .text1 {
         margin-right: -21%;
@@ -650,12 +650,9 @@ i {
         margin-left: 35px;
 
     }
-
-
     .formulaire input {
         width: 90px;
         margin-left: 25px;
-
     }
     .formulaire{
         position: relative;
@@ -705,15 +702,24 @@ i {
 }
 
 @media screen and (max-width:390px) {
+    .bigrestaurant{
+        padding: 0;
+        margin: 0;
+    }
     #lorem {
         font-size: 0.4em;
         margin-top: -60px;
 
     }
+    .text{
+        margin-right: 15px;
+        text-align: center;
+    }
 
     .image img {
-        width: 25vh;
-        height: 30vh;
+        width: 50vh;
+        height: 45vh;
+        margin-left: 25px;
     }
 
     .localisation {
@@ -746,14 +752,19 @@ i {
     }
 
     .adresse {
-        font-size: 1em;
-        margin-left: 50px;
-        margin-bottom: 50px;
+        font-size: 0.8em;
+        margin-left: 0px;
+        margin-top:7vh ;
+        display: none;
     }
 
     .maps1 {
         width: 5vh;
-        height: 50vh;
+        height: 2vh;
+        margin-right: 25px;
+        position: relative ;
+        right:35px;
+        
     }
 
     .maps {
@@ -763,24 +774,26 @@ i {
     }
 
     .temoignages {
-        text-align: center;
-        width: 15vh;
-        height: 15vh;
+      
+        margin-left: 50%;
+        width: 179px;
+        height: 100%;
         margin-top: 35px;
         margin-left: 8px;
-
     }
 
     .rectangle1 {
         font-size: 0.1em;
-        width: 10vh;
-        height: 25vh;
+        width: 50px;
+        height:240px;
+        margin-bottom: 20px;
     }
 
     .rectangle2 {
         font-size: 0.1em;
-        width: 10vh;
-        height: 25vh;
+        width: 50px;
+        height: 240px;
+        margin-bottom: 20px;
     }
 
     .nav ul {
@@ -803,12 +816,21 @@ i {
     }
 
     .imagerestaurant {
-       
+     grid-template-columns: auto;
+     margin-top: 25px;
       
+    }
+    .logo{
+        margin-left: 45px;
+    }
+    .nav ul{
+        padding-top: 0px;
     }
 
     .text1 {
         font-size: 0.8em;
+        text-align: center;
+        margin-left: 25px;
     }
 
     .text2 p {
@@ -825,7 +847,7 @@ i {
     }
 
     .text2 {
-        margin-left: 30px;
+       margin-right: -4px;
     }
 
     .boutton_blanc1 {
@@ -838,8 +860,12 @@ i {
 
     .contact {
         display: inline-block;
-        margin-left: 15px;
-
+        margin-left: 26px;
+        margin-right: 0px;
+        width: 330px;
+    }
+    marquee{
+        display: none;
     }
 
     .envoyer {
