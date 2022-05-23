@@ -27,37 +27,36 @@ body {
 
 }
 
-#bigrestaurant {}
-
-header {
-    background-color: orange;
+.header {
+margin-top: auto;
     display: flex;
-    justify-content: space-between;
-    height: 160px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: orange;
     box-shadow: 1px 1px 1px 1px whitesmoke;
+    height: 100px;
 }
+.telephone{
+    width: 25%;
+}
+
 
 .logo {
     width: 100px;
-    height: 95px;
-    margin-left: 150px;
-    margin-top: 30px;
+    height: 90px;
+
 }
 
 .nav ul {
     display: flex;
     list-style-type: none;
-    margin-right: 10px;
-    align-items: center;
-    padding-top: 30px;
-    margin-top: 30px;
     font-family: roboto-medium;
 }
 
 .nav li {
 
     margin-right: 15px;
-    justify-content: space-between;
 }
 
 a {
@@ -65,15 +64,10 @@ a {
     cursor: pointer;
 }
 
-.logo,
-img {
-    text-align: center;
-    margin-bottom: 80;
-}
-
 .imagerestaurant {
     display: grid;
     grid-template-columns: auto auto;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 45px;
 
@@ -138,35 +132,17 @@ img {
     margin-left: 150px;
     margin-bottom: 80px;
     float: left;
+
 }
-
-.boutton_blanc1 {
-    border: 0px solid aliceblue;
-    color: black;
-    background-color: whitesmoke;
-    margin-right: 300px;
-
-    width: 80px;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 50px;
+.boutton_blanc1{
+   border: none;
+margin-top: 30px;
+margin-right: 300px;
 }
-
-.boutton_blanc2 {
-    border: 0px solid aliceblue;
-    color: black;
-    background-color: whitesmoke;
-    margin-left: 300px;
-    width: 80px;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+#boutton_blanc2{
+margin-left: 300px;
+border: none;
+margin-top: 30px;
 }
 
 .text2 a {
@@ -193,6 +169,10 @@ h1 {
     height: 300px;
     background-color: white;
     border-radius: 10px;
+}
+.dishes{
+    width : 259px;
+     height :194px;
 }
 
 .square1 img {
@@ -232,28 +212,42 @@ h1 {
     width: 100%;
     height: 50%;
     margin-bottom: 50px;
+    
 }
+.nourriture {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .square2 img {
     width: 259px;
     height: 194px;
 }
 
-marquee {
-    width: 100%;
-    padding: 10px 0;
-    animation-delay: 1s;
-}
+
 
 /*mes services pour mes services*/
 .image img {
-    width: 827.44px;
-    height: 530.02px;
+    width: 527.44px;
+    height: 330.02px;
 }
 
 .services {
     display: flex;
     justify-content: space-between;
+   
 }
 
 .text {
@@ -280,6 +274,23 @@ marquee {
     margin-right: 100px;
     margin-bottom: 50px;
 }
+ 
+.localisation {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .lomé {
     border: 0px solid black;
@@ -443,7 +454,7 @@ h3 p {
     background-color: orange;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    flex-wrap: wrap;
     margin-right: 100px;
     width: 100%;
 }
@@ -480,24 +491,34 @@ h3 p {
 
 .icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 55px;
+    flex-wrap: wrap;
 }
 
 .partenaires {
     display: flex;
     justify-content: space-between;
-    margin-right: 25%;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+     margin-top: 50px;
+  
+    margin: 0 auto;
+}
+.parter1{
+    width:100%;
+}
+.parter2{
+    width:100%;
+}
+.parter3{
+    width: 100%;
 }
 
 .part1 {
     width: 50px;
     height: 50px;
     margin-top: 10px;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 .part2 {
@@ -510,7 +531,7 @@ h3 p {
     width: 50px;
     height: 50px;
     margin-top: 15px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .nomprenom input {
@@ -534,13 +555,21 @@ h3 p {
 i {
     padding-right: 20px;
     color: black;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
+
 @media screen and (max-width:768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+  
     .services {
 
         height: 350px;
+        flex-wrap: wrap;
     }
 
     .text1 {
@@ -552,6 +581,7 @@ i {
         margin-left: 0px;
     }
 
+
     .boutton_blanc1 {
 
         margin-top: 10px;
@@ -561,6 +591,9 @@ i {
         height: 28px;
         padding-left: 3px;
         padding-right: 3px;
+    }
+    .nourriture{
+        align-items: center;
     }
 
     .boutton_blanc2 {
@@ -666,12 +699,12 @@ i {
 
     .footer nav {
         font-size: 1em;
-
+        flex-wrap: wrap;
         margin-left: 25%;
     }
 
-    .footer {
-        display: grid;
+    .navfooter {
+       flex-wrap: wrap;
 
     }
 
@@ -706,19 +739,29 @@ i {
         padding: 0;
         margin: 0;
     }
+    .services{
+        flex-wrap: wrap;
+    }
     #lorem {
         font-size: 0.4em;
         margin-top: -60px;
 
     }
+    .header{
+        max-width: 300vh;
+        height: 131px;
+        padding-top: 21px;
+    }
     .text{
         margin-right: 15px;
         text-align: center;
+        width: 350px;
+        margin: 0 auto;
     }
 
     .image img {
-        width: 50vh;
-        height: 45vh;
+        width: 100%;
+        height: 30vh;
         margin-left: 25px;
     }
 
@@ -822,6 +865,8 @@ i {
     }
     .logo{
         margin-left: 45px;
+        position: relative;
+        bottom: 30px;
     }
     .nav ul{
         padding-top: 0px;
@@ -896,8 +941,25 @@ i {
         margin-right: 25%;
     }
 
-    .header {
-        width: 300vh;
+}
+@media screen and (max-width:1214px){
+    .maps{
+        flex-wrap: wrap;
     }
+}
+@media screen and (max-width:986px){
+    .contact{
+        flex-wrap: wrap;
+    }
+    .formulaire{
+        margin-top:30px ;
+    }
+}
+@media screen and (max-width:980px){
+    .imagerestaurant{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width:px){
 
 }
