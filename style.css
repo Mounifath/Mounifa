@@ -327,13 +327,12 @@ h1 {
 .maps {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 .maps1 {
-    width: 900px;
+    width: 100%;
 }
 
 .adresse {
@@ -812,7 +811,7 @@ i {
 
     .maps {
         padding-bottom: 100vh;
-        flex-wrap: wrap;
+        
         text-align: center;
     }
 
@@ -909,9 +908,7 @@ i {
         margin-right: 0px;
         width: 330px;
     }
-    marquee{
-        display: none;
-    }
+   
 
     .envoyer {
         margin-left: 45%;
@@ -960,6 +957,40 @@ i {
         grid-template-columns: auto;
     }
 }
-@media screen and (max-width:px){
+@media screen and (max-width:1252px){
+    .maps{
+     flex-wrap: wrap;    
+    }
+    iframe{
+        margin-top: 200px;
+        height: 10vh;
+    }
+    .localisation{
+        margin-top: 300px;
+    }
+    .services{
+       width: 80%;
+       margin: 0 auto;
+    }
 
+}
+@media screen and (max-width:537px){
+    .localisation{
+        margin-top:500px ;
+    }
+    .temoignages{
+        width: 100px;
+    }
+    .rectangle1{
+        width: 35%;
+        height: 100vh;
+    }
+    .rectangle2{
+        width: 35%;
+        height: 100vh;padding-right: 65px;
+    }
+    .rectangle1 h4{
+        text-align: center;
+        margin-right: 10%;
+    }
 }
